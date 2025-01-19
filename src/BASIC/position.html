@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="bg-gray-500">
+    <div class="flex flex-col items-center justify-center min-h-screen gap-14">
+
+        <div class="relative">
+            <div class="bg-black border-2 border-red-400 rounded-xl text-white text-3xl p-6">Parent element แม่1</div>
+
+            <div class="absolute -right-4 -bottom-6">
+                <div class=" p-2 bg-red-500  ring-4 ring-orange-500 text-white text-lg rounded-full">ลูก1</div>
+            </div>
+
+        </div>
+
+        <div class="relative">
+            <div class="bg-black text-white text-3xl p-6">Parent element แม่2</div>
+
+            <div class="absolute -bottom-6">
+                <div class="p-2 bg-red-500 ring-4 ring-orange-500 text-white text-lg rounded-full">ลูก2</div>
+            </div>
+
+        </div>
+
+        <div class="relative">
+            
+            <div class="bg-black text-green-400 text-3xl rounded-xl p-6">
+                <i class="fa-regular fa-bell bg-white text-black rounded-xl ml-2"></i>
+                Message</div>
+            
+            <div class="absolute -right-4 -top-6">
+
+                <div class="p-2 bg-black ring-2 ring-green-500 text-white text-lg rounded-full">2+</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <nav class="fixed top-0 bg-black text-white right-0 left-0 h-16 
+                text-3xl flex items-center justify-between p-4 ml-24">
+        <div>header</div>
+        <div class="flex gap-4">
+            <p class="bg-red-500 p-2 rounded-lg">img</p>
+            <p class="bg-red-500 p-2 rounded-lg">หน้าแรก</p>
+        </div>
+    </nav>
+
+    <aside class="fixed left-0 top-0 bottom-0 bg-black text-white w-24 h-screen">
+        <div class="flex flex-col items-center justify-between h-full">
+            <div>
+                <button class="bg-red-500 text-white text-medium px-6 py-2 mt-10 rounded-lg">in</button>
+            </div>
+            <div>
+                <button class="bg-red-500 text-white px-6 py-2 mb-10 rounded-lg">out</button>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="fixed bottom-0 right-0 left-0 bg-black text-white text-3 ml-24 h-16">Footer</div>
+    </footer>
+
+
+</body>
+</html>

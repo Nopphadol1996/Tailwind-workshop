@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body class="bg-stone-800 text-white">
+    <!-- min-h-screen เต็มหน้าจอ  mx magin แกนx = auto-->
+    <div class="flex flex-col min-h-screen mx-auto mw-auto">
+
+        <div class="flex flex-col items-center justify-center w-full p-10 bg-gray-500">
+            <div class="w-56 h-56 flex flex-col">
+                <img class="border-2 border-red-500 w-full h-full"
+                 src="https://cdn.pixabay.com/photo/2015/12/27/08/18/sea-1109607_1280.jpg" alt="">
+                <span>Default img</span>
+            </div>
+
+            <div class="w-56 h-56 flex flex-col mt-10">
+                <img class="border-2 border-red-500 w-full h-full object-cover"
+                 src="https://cdn.pixabay.com/photo/2015/12/27/08/18/sea-1109607_1280.jpg" alt="">
+                <span>object-cover</span>
+            </div>
+
+            <div class="w-56 h-56 flex flex-col mt-10">
+                <img class="border-2 border-red-500 w-full h-full object-contain"
+                 src="https://cdn.pixabay.com/photo/2015/12/27/08/18/sea-1109607_1280.jpg" alt="">
+                <span>object-contain image</span>
+            </div>
+
+            <div class="w-56 h-56 flex flex-col mt-10">
+                <img class="border-2 border-red-500 w-full h-full object-fill"
+                 src="https://cdn.pixabay.com/photo/2015/12/27/08/18/sea-1109607_1280.jpg" alt="">
+                <span class="bg-gray-400 bg-opacity-20">object-fill image</span>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
